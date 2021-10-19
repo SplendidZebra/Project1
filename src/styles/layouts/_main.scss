@@ -1,0 +1,82 @@
+@import 'styles/components/code';
+@import 'styles/components/heading';
+@import 'styles/components/link';
+@import 'styles/components/list';
+
+.main {
+  h2 {
+    @extend %heading--h2;
+
+    color: $color-yellow;
+  }
+
+  h3 {
+    @extend %heading--h3;
+
+    color: $color-cyan;
+  }
+
+  h4 {
+    @extend %heading--h4;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @extend %heading;
+
+    margin: 32px auto 0;
+
+    + h1,
+    + h2,
+    + h3,
+    + h4 {
+      margin-top: 20px;
+    }
+  }
+
+  p,
+  ol,
+  ul,
+  pre {
+    margin: 16px 0 0;
+  }
+
+  ol,
+  ul {
+    padding-left: 32px;
+  }
+
+  a {
+    @extend %link;
+    @extend %link--green;
+  }
+
+  code {
+    @extend %code;
+  }
+
+  pre {
+    @extend %pre;
+  }
+
+  ol {
+    @extend %list--ordered;
+  }
+
+  ul {
+    @extend %list--unordered;
+  }
+
+  hr {
+    background-color: $color-selection;
+    border: 0;
+    height: 4px;
+    margin: 32px 0;
+
+    + * {
+      margin-top: 0;
+    }
+  }
+}
