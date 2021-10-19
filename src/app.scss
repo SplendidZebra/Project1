@@ -1,10 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+
 /* Ordered Imports */
 // @import 'styles/utils/variables';
 // @import 'styles/utils/mixins';
 // @import 'styles/base/fonts';
 // @import 'styles/base/reset';
 // @import 'styles/base/root';
+body {
+  font-family: 'Bebas Neue', cursive;
+}
 
 .hello-world {
-  color: rgb(255, 0, 0);
+  color: #000;
+  font-family: 'Lobster', cursive;
+}
+
+.img {
+  width: 100px;
+}
+
+.layout {
+  display: flex;
+
+  &--left {
+    flex-grow: 1;
+    background-color: rgb(6, 235, 6);
+  }
+
+  &--right {
+    background-color: rgb(177, 22, 117);
+  }
 }
