@@ -10,5 +10,8 @@ module.exports = {
       5,
       { ignore: ['blockless-at-rules', 'pseudo-classes'] },
     ],
+    'no-descending-specificity': null,
+    'order/properties-alphabetical-order': null,
+    'font-family-no-missing-generic-family-keyword': null,
   },
 };
